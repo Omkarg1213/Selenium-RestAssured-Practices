@@ -15,8 +15,8 @@ public class Trello {
 public void createBoard() {
 	RestAssured.baseURI = "https://api.trello.com";
 	
-	Response rep = given().queryParam("name", "om").queryParam("key", "8ab92ce1820277b5769cb80d4cc7904e")
-	.queryParam("token", "ATTAbfa498c027272fcfcade2a3359f55909ce060268bc45ff3a8f0bf659c8b219cf275CC8EA")
+	Response rep = given().queryParam("name", "om").queryParam("key", System.getProperty("Trello_Key"))
+	.queryParam("token", System.getProperty("Trello_Token"))
 	.header("Content-Type", "application/xml").post("/1/boards/")
 	.then().extract().response();
 	
@@ -31,8 +31,8 @@ public void createBoard() {
 public void getBoard() {
 	RestAssured.baseURI = "https://api.trello.com";
 	
-	given().queryParam("key", "8ab92ce1820277b5769cb80d4cc7904e")
-	.queryParam("token", "ATTAbfa498c027272fcfcade2a3359f55909ce060268bc45ff3a8f0bf659c8b219cf275CC8EA")
+	given().queryParam("key", System.getProperty("Trello_Key"))
+	.queryParam("token", System.getProperty("Trello_Token"))
 	.header("Content-Type", "application/json").get("/1/boards/"+"65fc1beee1d3cc3848271092")
 	.then().assertThat().statusCode(200).contentType(ContentType.JSON).log().all();
 }
@@ -41,8 +41,8 @@ public void getBoard() {
 public void delete() {
 RestAssured.baseURI = "https://api.trello.com";
 	
-	given().queryParam("key", "8ab92ce1820277b5769cb80d4cc7904e")
-	.queryParam("token", "ATTAbfa498c027272fcfcade2a3359f55909ce060268bc45ff3a8f0bf659c8b219cf275CC8EA")
+	given().queryParam("key", System.getProperty("Trello_Key"))
+	.queryParam("token", System.getProperty("Trello_Token"))
 	.header("Content-Type", "application/json").delete("/1/boards/"+id)
 	.then().assertThat().statusCode(200).contentType(ContentType.JSON).log().all();
 }

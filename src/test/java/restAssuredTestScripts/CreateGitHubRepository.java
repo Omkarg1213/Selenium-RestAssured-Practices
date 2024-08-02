@@ -14,7 +14,7 @@ public class CreateGitHubRepository {
 	public void TCreateGitHubRepository() {
 	    
 	        String baseUrl = "https://api.github.com/user/repos";
-	        String token = "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";
+	        String token = System.getProperty("GIT_TOKEN");
 	        String repoName = "omkargRestAssuredRepo";
 
 	        String requestBody = "{\n" +
