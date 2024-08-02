@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-02T12:28:47 IST" name="Default suite" finished-at="2024-07-02T12:28:55 IST" duration-ms="8453">
+    <groups>
+    </groups>
+    <test started-at="2024-07-02T12:28:47 IST" name="Default test" finished-at="2024-07-02T12:28:55 IST" duration-ms="8453">
+      <class name="restAssuredTestScripts.CryptoWallet">
+        <test-method signature="toCalculateTransaction_fee()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:47 IST" name="toCalculateTransaction_fee" finished-at="2024-07-02T12:28:51 IST" duration-ms="3844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCalculateTransaction_fee -->
+        <test-method signature="toListAllTransactions()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:51 IST" name="toListAllTransactions" finished-at="2024-07-02T12:28:52 IST" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toListAllTransactions -->
+        <test-method signature="toListAvailableExchange_rates()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:52 IST" name="toListAvailableExchange_rates" finished-at="2024-07-02T12:28:52 IST" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toListAvailableExchange_rates -->
+        <test-method signature="toLoginUser()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:52 IST" name="toLoginUser" finished-at="2024-07-02T12:28:53 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLoginUser -->
+        <test-method signature="toRegisterUser()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:53 IST" name="toRegisterUser" finished-at="2024-07-02T12:28:54 IST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toRegisterUser -->
+        <test-method signature="toRetrieveBalance()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:54 IST" name="toRetrieveBalance" finished-at="2024-07-02T12:28:55 IST" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toRetrieveBalance -->
+        <test-method signature="toTransferToTranspient()[pri:0, instance:restAssuredTestScripts.CryptoWallet@2c1b194a]" started-at="2024-07-02T12:28:55 IST" name="toTransferToTranspient" finished-at="2024-07-02T12:28:55 IST" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toTransferToTranspient -->
+      </class> <!-- restAssuredTestScripts.CryptoWallet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
